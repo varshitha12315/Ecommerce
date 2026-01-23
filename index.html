@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Modern E-Commerce Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#" onclick="showPage('home'); return false;">ShopHub</a>
+            </div>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button onclick="searchProducts()">🔍</button>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="showPage('home'); return false;">Home</a>
+                <a href="#" onclick="showPage('products'); return false;">Products</a>
+                <a href="#" onclick="showPage('cart'); return false;" class="cart-link">
+                    Cart <span id="cartCount" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to ShopHub</h1>
+                <p>Discover amazing products at unbeatable prices</p>
+                <button class="cta-button" onclick="showPage('products')">Shop Now</button>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div id="featuredProducts" class="products-grid">
+                    <!-- Products will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <div class="category-card" onclick="filterByCategory('electronics')">
+                        <div class="category-icon">📱</div>
+                        <h3>Electronics</h3>
+                    </div>
+                    <div class="category-card" onclick="filterByCategory('clothing')">
+                        <div class="category-icon">👕</div>
+                        <h3>Clothing</h3>
+                    </div>
+                    <div class="category-card" onclick="filterByCategory('accessories')">
+                        <div class="category-icon">🎒</div>
+                        <h3>Accessories</h3>
+                    </div>
+                    <div class="category-card" onclick="filterByCategory('footwear')">
+                        <div class="category-icon">👟</div>
+                        <h3>Footwear</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Page -->
+    <div id="products-page" class="page">
+        <div class="container">
+            <h1 class="page-title">All Products</h1>
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterByCategory('all')">All</button>
+                <button class="filter-btn" onclick="filterByCategory('electronics')">Electronics</button>
+                <button class="filter-btn" onclick="filterByCategory('clothing')">Clothing</button>
+                <button class="filter-btn" onclick="filterByCategory('accessories')">Accessories</button>
+                <button class="filter-btn" onclick="filterByCategory('footwear')">Footwear</button>
+            </div>
+            <div id="productsGrid" class="products-grid">
+                <!-- Products will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Page -->
+    <div id="product-details-page" class="page">
+        <div class="container">
+            <button class="back-button" onclick="showPage('products')">← Back to Products</button>
+            <div id="productDetails" class="product-details">
+                <!-- Product details will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Page -->
+    <div id="cart-page" class="page">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            <div id="cartContent" class="cart-content">
+                <!-- Cart items will be dynamically loaded -->
+            </div>
+            <div id="cartSummary" class="cart-summary">
+                <!-- Cart summary will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopHub</h3>
+                    <p>Your trusted online shopping destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="showPage('home'); return false;">Home</a></li>
+                        <li><a href="#" onclick="showPage('products'); return false;">Products</a></li>
+                        <li><a href="#" onclick="showPage('cart'); return false;">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@shophub.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
