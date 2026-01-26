@@ -1,6 +1,6 @@
 # ShopHub - Professional E-Commerce Website
 
-A complete, modern, and fully functional e-commerce website built with pure HTML, CSS, and Vanilla JavaScript. This project is portfolio-ready and demonstrates professional front-end development skills.
+A complete, modern, and fully functional e-commerce website built with pure HTML, CSS, and Vanilla JavaScript. 
 
 ## 🚀 Features
 
