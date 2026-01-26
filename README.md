@@ -136,17 +136,17 @@ Modify CSS variables in `css/style.css`:
 }
 ```
 
-## 📄 License
-
-This project is open source and available for portfolio use.
-
 ## 👨‍💻 Developer
+Varshitha I P
+BE in Data Science  
+Aspiring Software & Front-End Developer  
 
-Built with ❤️ for front-end developers looking to showcase their skills.
+- GitHub: https://github.com/varshitha12315
+- LinkedIn: https://www.linkedin.com/in/varshitha-i-p-46852b34b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
----
 
-**Note:** This is a complete, production-ready front-end e-commerce website suitable for portfolios and demonstrations.
+
+
 
 
 
